@@ -27,5 +27,6 @@ const sendMessage = (user, message) => {
   display: flex;
   justify-content: space-around;
   padding: 20px;
+  gap: 30px;
 }
 </style>

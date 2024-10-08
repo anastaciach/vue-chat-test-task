@@ -70,40 +70,46 @@ const sendMessage = () => {
   margin-bottom: 10px;
   padding: 5px;
   border-radius: 5px;
-  background-color: #e0e0e0;
-  text-align: left;
   display: flex;
   justify-content: flex-start;
+  text-align: left;
 }
+
 .message.self {
-  background-color: #dcf8c6;
   justify-content: flex-end;
   text-align: right;
 }
+
 .message-content {
   max-width: 70%;
-}
-.input-container {
-  display: flex;
   padding: 5px;
   border-radius: 5px;
   background-color: #e0e0e0;
+  display: inline-block;
 }
+
 .message.self .message-content {
   background-color: #dcf8c6;
 }
+
 .timestamp {
   display: block;
   font-size: 10px;
   margin-top: 2px;
   color: #777;
 }
+
+.input-container {
+  display: flex;
+}
+
 input {
   flex: 1;
   padding: 5px;
   border-radius: 5px 0 0 5px;
   border: 1px solid #ccc;
 }
+
 button {
   padding: 5px 10px;
   border: none;
@@ -112,6 +118,7 @@ button {
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
+
 button:hover {
   background-color: #45a049;
 }
