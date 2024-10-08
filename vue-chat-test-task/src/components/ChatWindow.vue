@@ -9,7 +9,7 @@
       >
         <div class="message-content">
           <strong>{{ msg.user }}:</strong> {{ msg.message }}
-          <small>{{ msg.timestamp }}</small>
+          <small class="timestamp">{{ msg.timestamp }}</small>
         </div>
       </div>
     </div>
@@ -57,7 +57,7 @@ const sendMessage = () => {
 }
 
 .message-list {
-  height: 200px;
+  height: 300px;
   overflow-y: auto;
   margin-bottom: 10px;
   border: 1px solid #eee;
@@ -85,6 +85,18 @@ const sendMessage = () => {
 }
 .input-container {
   display: flex;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+}
+.message.self .message-content {
+  background-color: #dcf8c6;
+}
+.timestamp {
+  display: block;
+  font-size: 10px;
+  margin-top: 2px;
+  color: #777;
 }
 input {
   flex: 1;
